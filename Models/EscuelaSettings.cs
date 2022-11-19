@@ -3,14 +3,14 @@
     public class EscuelaSettings: IEscuelaSettings
     {
         public string Server { get; set; }
-        public string Database { get; }
-        public string Collection { get; }
+        public string Database { get; set; }
+        public string Collection { get; set; }
     }
 
     public interface IEscuelaSettings
     {
-        string Server { get; }
-        string Database { get; }
-        string Collection { get; }
+        string Server { get; set; }
+        string Database { get; set; }
+        string Collection { get; set; }
     }
 }
